@@ -1,0 +1,74 @@
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.game-wrap {
+    height: 100%;
+    flex-direction: column;
+}
+.game-summary {
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.game-body {
+    height: 90%;
+    flex-direction: column;
+}
+.game-body-main {
+    height: 70%;
+    padding: 10px;
+}
+.game-body-main-left {
+    height: 100%;
+}
+.game-click {
+    height: 100%;
+    border: 8px dashed;
+}
+.game-body-main-right {
+}
+.game-body-log {
+    height: 30%;
+}
+.game-log {
+    height: 100%;
+}
+.game-scale-inc {
+    animation: stress;
+    animation-duration: 0.4s;
+}
+@keyframes stress {
+    0% {
+        -webkit-transform: scale(1, 2);
+        -ms-transform: scale(1, 2);
+        transform: scale(1, 2);
+    }
+    50% {
+        -webkit-transform: scale(2.5, 2);
+        -ms-transform: scale(2.5, 2);
+        transform: scale(2.5, 2);
+    }
+    100% {
+        -webkit-transform: scale(1, 2);
+        -ms-transform: scale(1, 2);
+        transform: scale(1, 2);
+    }
+}
+
+.game-click-effect {
+    animation: fadeout;
+    animation-duration: 0.1s;
+}
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
