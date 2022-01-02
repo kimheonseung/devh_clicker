@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import './ClickEffect.css';
 
 function ClickEffect({x, y, count}) {
 
@@ -14,7 +15,9 @@ function ClickEffect({x, y, count}) {
   });
   return (
     <>
-      <div onAnimationEnd={handleAnimationEnd} style={{display:'none', position:'absolute', left:`${x+45}px`, top:`${y-60}px`}} id='game-click-effect' className='t-text game-click-effect'>+{count}</div>
+      <div className="click-effect-wrap">
+        <div onAnimationEnd={handleAnimationEnd} style={{display:'none', position:'absolute', left:`${x}px`, top:`${y}px`}} id='game-click-effect' className='t-text game-click-effect'></div>
+      </div>
     </>
   );
 }

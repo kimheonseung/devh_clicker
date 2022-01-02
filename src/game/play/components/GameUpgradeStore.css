@@ -7,7 +7,6 @@
     align-items: center;
     justify-content: center;
     height: 60%;
-
 }
 .modal-button-wrap {
     display: flex;
@@ -18,9 +17,13 @@
 }
 
 .grid-wrap {
-    width: 60%;
+    width: 100%;
 }
 
 .modal-game-upgrade-store {
+    width: 100%;
+}
+
+.game-upgrade-wrap {
     width: 100%;
 }
