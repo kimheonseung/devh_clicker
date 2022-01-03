@@ -32,31 +32,31 @@ function GamePage() {
     effectDiv.style.left = e.clientX+'px';
     effectDiv.style.top = e.clientY+'px';
 
-    const effectDivR = document.createElement("div");
-    effectDivR.className = 'game-click-effect';
-    effectDivR.style.left = (e.clientX+20)+'px';
-    effectDivR.style.top = e.clientY+'px';
+    // const effectDivR = document.createElement("div");
+    // effectDivR.className = 'game-click-effect';
+    // effectDivR.style.left = (e.clientX+20)+'px';
+    // effectDivR.style.top = e.clientY+'px';
 
-    const effectDivL = document.createElement("div");
-    effectDivL.className = 'game-click-effect';
-    effectDivL.style.left = (e.clientX-20)+'px';
-    effectDivL.style.top = e.clientY+'px';
+    // const effectDivL = document.createElement("div");
+    // effectDivL.className = 'game-click-effect';
+    // effectDivL.style.left = (e.clientX-20)+'px';
+    // effectDivL.style.top = e.clientY+'px';
 
     document.body.appendChild(effectDiv);
-    document.body.appendChild(effectDivR);
-    document.body.appendChild(effectDivL);
+    // document.body.appendChild(effectDivR);
+    // document.body.appendChild(effectDivL);
     
     effectDiv.addEventListener('animationend', () => {
       effectDiv.parentElement.removeChild(effectDiv);
     });
 
-    effectDivR.addEventListener('animationend', () => {
-      effectDivR.parentElement.removeChild(effectDivR);
-    });
+    // effectDivR.addEventListener('animationend', () => {
+    //   effectDivR.parentElement.removeChild(effectDivR);
+    // });
 
-    effectDivL.addEventListener('animationend', () => {
-      effectDivL.parentElement.removeChild(effectDivL);
-    });
+    // effectDivL.addEventListener('animationend', () => {
+    //   effectDivL.parentElement.removeChild(effectDivL);
+    // });
   }
 
   const handleClick = (e) => {
